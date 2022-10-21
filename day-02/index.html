@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main
+      class="flex items-center justify-center w-screen h-screen bg-slate-200">
+      <div class="pt-4 pb-8 px-8 bg-white rounded-lg">
+        <h1 class="my-4 text-3xl font-semibold">Mortgage Calculator</h1>
+        <form id="form-mortgage" class="flex flex-col gap-4" action="">
+          <input
+            type="number"
+            id="quantity"
+            placeholder="$$$"
+            required
+            class="px-4 py-2 border rounded-lg bg-slate-100 border-slate-300" />
+          <input
+            type="number"
+            id="months"
+            placeholder="moths"
+            required
+            class="px-4 py-2 border rounded-lg bg-slate-100 border-slate-300" />
+          <input
+            type="number"
+            id="interest"
+            placeholder="%"
+            required 
+            class="px-4 py-2 border rounded-lg bg-slate-100 border-slate-300" />
+          <button
+            type="submit"
+            id="button-submit"
+            class="bg-sky-700 py-2 px-4 rounded-full text-white font-semibold text-xl">
+            Calculate
+          </button>
+        </form>
+        <div class="pt-4 text-xl font-semibold">
+          <p>
+            <span>Mortgage: </span>
+            <span id="result"></span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
